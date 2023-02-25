@@ -1,4 +1,5 @@
 package ru.netology.JAVA_HW5_Z1.services;
+
 public class MonthCalcService {
     public int calculate(int income, int expenses, int threshold) {
         int count = 0;
@@ -10,10 +11,7 @@ public class MonthCalcService {
             } else {
                 money = money + income - expenses;
             }
-            //Вывод значений по месяцам для проверки
-            //System.out.println("Месяц " + (month+1) +" Остаток денег " + (int)money);
         }
         return count;
-
     }
 }
